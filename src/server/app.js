@@ -9,6 +9,17 @@ const app = express();
 // Serve front end assets which have been built by webpack
 app.use("/static", express.static(STATIC_ASSETS_PATH));
 
+app.get('/debug/files', (req, res) => {
+  const fs = require('fs');
+  const files = fs.readdirSync(STATIC_ASSETS_PATH);
+  res.send(files);
+});
+
+
+
+
+
+
 app.get("/", (request, response) => {
 	response.send(`
 <!DOCTYPE html>
