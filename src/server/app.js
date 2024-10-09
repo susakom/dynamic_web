@@ -2,23 +2,12 @@ const express = require("express");
 const path = require("path");
 
 const PORT = process.env.PORT || 3000;
-const STATIC_ASSETS_PATH = path.resolve(`${__dirname}/../../static`);
+const STATIC_ASSETS_PATH = path.resolve(`${__dirname}../../static`);
 
 const app = express();
 
 // Serve front end assets which have been built by webpack
 app.use("/static", express.static(STATIC_ASSETS_PATH));
-
-app.get('/debug/files', (req, res) => {
-  const fs = require('fs');
-  const files = fs.readdirSync(STATIC_ASSETS_PATH);
-  res.send(files);
-});
-
-
-
-
-
 
 app.get("/", (request, response) => {
 	response.send(`
