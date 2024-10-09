@@ -1,8 +1,8 @@
 {
   "name": "example-app",
-  "scripts": {
-    "build": "webpack --mode development --entry ./src/client/index.js --output ./static/bundle.js",
-    "start": "node src/server/app.js"
+  ""scripts": {
+  "build": "NODE_OPTIONS=--openssl-legacy-provider webpack --mode development --entry ./src/client/index.js --output ./static/bundle.js",
+  "start": "node src/server/app.js"
   },
   "dependencies": {
     "express": "^4.17.1"
