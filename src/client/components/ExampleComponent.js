@@ -13,6 +13,9 @@ export default function ExampleComponent() {
 		<p style={{ fontFamily: "Arial, sans-serif", fontSize: "20px", color: "red" }}> 
 		Изменение в проекте  
 		</p>
+		<p style={{ fontFamily: "Arial Bold, sans-serif", fontSize: "28px", color: "red" }}> 
+		Изменение в проекте продолжение  
+		</p>
 	    </>
 	);
 }
