@@ -2,7 +2,7 @@
 
 > This is an example app created for the blog post '[What is a good directory structure for a monorepo with a Node.js back end and React front end?](https://simonplend.com/what-is-a-good-directory-structure-for-a-monorepo-with-a-node-js-back-end-and-react-front-end/)'.
 
-## Requirements
+## Requirements 
 
 - Node.js >= v12
 
